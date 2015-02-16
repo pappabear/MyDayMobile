@@ -1,0 +1,13 @@
+<ion-view view-title="Someday">
+    <ion-content>
+        <ion-refresher on-refresh="doRefresh()">
+
+        </ion-refresher>
+        <ion-checkbox ng-repeat="item in items"
+                      ng-model="item.checked"
+                      ng-checked="item.checked"
+                      ng-click="check(item.id)">
+            {{ item.text }}
+        </ion-checkbox>
+    </ion-content>
+</ion-view>

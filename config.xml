@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/3.6.3"
+        id          = "com.tessa-group.mydaymobile"
+        version     = "1.0.3" >
+
+  <!-- versionCode is optional and Android only -->
+
+  <name>MyDayMobile</name>
+
+  <description>
+    The mobile app for MyDay.
+  </description>
+
+  <author href="https://build.phonegap.com" email="chip.irek@gmail.com">
+    Chip Irek
+  </author>
+
+  <!-- Core plugins -->
+  <gap:plugin name="org.apache.cordova.battery-status" />
+  <gap:plugin name="org.apache.cordova.camera" />
+  <gap:plugin name="org.apache.cordova.media-capture" />
+  <gap:plugin name="org.apache.cordova.console" />
+  <gap:plugin name="org.apache.cordova.contacts" />
+  <gap:plugin name="org.apache.cordova.device" />
+  <gap:plugin name="org.apache.cordova.device-motion" />
+  <gap:plugin name="org.apache.cordova.device-orientation" />
+  <gap:plugin name="org.apache.cordova.dialogs" />
+  <gap:plugin name="org.apache.cordova.file" />
+  <gap:plugin name="org.apache.cordova.file-transfer" />
+  <gap:plugin name="org.apache.cordova.geolocation" />
+  <gap:plugin name="org.apache.cordova.globalization" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" />
+  <gap:plugin name="org.apache.cordova.media" />
+  <gap:plugin name="org.apache.cordova.network-information" />
+  <gap:plugin name="org.apache.cordova.splashscreen" />
+  <gap:plugin name="org.apache.cordova.vibration" />
+  <gap:plugin name="de.appplant.cordova.plugin.badge" />
+
+  <!-- Third party plugins -->
+  <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+  <!--
+      <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+  -->
+
+  <gap:platform name="ios" />
+
+  <!-- iOS 7+, iPhone / iPod Touch  -->
+  <icon src="todolist.png" width="60" height="60"/>
+  <icon src="todolist.png" width="120" height="120"/>
+
+  <!-- iOS 7+, iPad -->
+  <icon src="todolist.png" width="76" height="76"/>
+  <icon src="todolist.png" width="152" height="152"/>
+
+  <gap:splash src="todolist.png" gap:platform="ios" width="320" height="480"/>
+
+</widget>
