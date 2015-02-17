@@ -1,0 +1,23 @@
+<ion-view view-title="New Todo">
+    <ion-content>
+        <form class="list" ng-show="showForm">
+            <div class="item item-divider">
+                Subject
+            </div>
+            <label class="item item-input">
+                <input type="text" placeholder="type a subject here..." ng-model="todo.subject">
+            </label>
+            <div class="item item-divider">
+                Due date
+            </div>
+            <ion-radio ng-repeat="date in dates"
+                       ng-value="date.value"
+                       ng-model="todo.duedate">
+                {{ date.text }}
+            </ion-radio>
+            <div class="padding">
+                <button class="button button-block button-balanced" ng-click="submit()">Add</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

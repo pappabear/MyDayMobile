@@ -1,5 +1,13 @@
 <ion-view view-title="Today">
+
     <ion-content>
+
+        <button class="button button-outline icon-left ion-plus button-positive"
+                style='margin-top: 5px; margin-bottom: 5px; margin-left: 5px; text-align-last: right;'
+                ng-click="add()">
+            Add a new todo
+        </button>
+
         <ion-refresher on-refresh="doRefresh()">
 
         </ion-refresher>

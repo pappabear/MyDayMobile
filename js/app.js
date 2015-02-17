@@ -43,6 +43,7 @@ angular.module('myDayMobileApp', ['ionic', 'myDayMobileApp.controllers'])
         })
         .state('appmenu.today', {
             url: "/today",
+            cache: false,
             views: {
                 'menuContent': {
                     templateUrl: "templates/today.html",
@@ -52,6 +53,7 @@ angular.module('myDayMobileApp', ['ionic', 'myDayMobileApp.controllers'])
         })
         .state('appmenu.tomorrow', {
             url: "/tomorrow",
+            cache: false,
             views: {
                 'menuContent': {
                     templateUrl: "templates/tomorrow.html",
@@ -61,10 +63,20 @@ angular.module('myDayMobileApp', ['ionic', 'myDayMobileApp.controllers'])
         })
         .state('appmenu.someday', {
             url: "/someday",
+            cache: false,
             views: {
                 'menuContent': {
                     templateUrl: "templates/someday.html",
                     controller: "SomedayController"
+                }
+            }
+        })
+        .state('appmenu.new', {
+            url: "/new",
+            views: {
+                'menuContent' :{
+                    templateUrl: "templates/new.html",
+                    controller: "NewTodoController"
                 }
             }
         })

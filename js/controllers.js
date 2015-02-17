@@ -1,5 +1,6 @@
 angular.module('myDayMobileApp.controllers', [])
 
+
     .controller('SignInController', function ($scope, $state) {
 
         $scope.signIn = function (user) {
@@ -10,7 +11,8 @@ angular.module('myDayMobileApp.controllers', [])
 
     })
 
-    .controller('TodayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http) {
+
+    .controller('TodayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
         function getData()
         {
@@ -91,6 +93,11 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
+        $scope.add = function() {
+            $state.go('appmenu.new');
+        }
+
+
         $scope.doRefresh = function ()
         {
 
@@ -131,7 +138,8 @@ angular.module('myDayMobileApp.controllers', [])
 
     })
 
-    .controller('TomorrowController', function ($scope, $ionicSideMenuDelegate, $timeout, $http) {
+
+    .controller('TomorrowController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
         function getData()
         {
@@ -211,6 +219,11 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
+        $scope.add = function() {
+            $state.go('appmenu.new');
+        }
+
+
         $scope.doRefresh = function ()
         {
 
@@ -251,7 +264,8 @@ angular.module('myDayMobileApp.controllers', [])
 
     })
 
-    .controller('SomedayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http) {
+
+    .controller('SomedayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
         function getData()
         {
@@ -331,6 +345,11 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
+        $scope.add = function() {
+            $state.go('appmenu.new');
+        }
+
+
         $scope.doRefresh = function ()
         {
 
@@ -369,4 +388,49 @@ angular.module('myDayMobileApp.controllers', [])
         // do this to load the page data
         getData();
 
+    })
+
+
+    .controller('NewTodoController', function ($scope, $state, $ionicSideMenuDelegate, $timeout, $http) {
+
+        $scope.showForm = true;
+
+        $scope.dates = [
+            { text: 'Today', value: '1' },
+            { text: 'Tomorrow', value: '2' },
+            { text: 'Someday', value: '3' }
+        ];
+
+        $scope.todo = {};
+
+        $scope.submit = function() {
+            if(!$scope.todo.subject) {
+                alert('Form cannot be left blank');
+                return;
+            }
+            console.log('should be POSTing right now...');
+
+            var today = new Date();
+            var tomorrow = new Date(+new Date() + 86400000);
+            var dt = null;
+            if ($scope.todo.duedate == '1')
+                dt = today.getMonth() + 1 + '/' + today.getDate() + '/' + today.getFullYear();
+            else if ($scope.todo.duedate == '2')
+                dt = tomorrow.getMonth() + 1 + '/' + tomorrow.getDate() + '/' + tomorrow.getFullYear();
+            $scope.payload = {subject:$scope.todo.subject, is_complete:false, recurrence:0, position:1, due_date:dt};
+
+            console.log('$scope.payload.subject=' + $scope.payload.subject);
+            console.log('$scope.payload.duedate=' + $scope.payload.due_date);
+
+            $http({
+                method: 'POST',
+                url: 'http://myday.herokuapp.com/todos?auth_token=mjwiPdGEPqnAV8MiFfLp',
+                data: $scope.payload
+            });
+
+            $scope.showForm = false;
+            //$scope.attendees.push($scope.attendee);
+            $state.go('appmenu.today');
+        };
     });
+
