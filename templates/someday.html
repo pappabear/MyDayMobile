@@ -1,11 +1,17 @@
 <ion-view view-title="Someday">
     <ion-content>
 
-        <button class="button button-outline icon-left ion-plus button-positive"
-                style='margin-top: 5px; margin-bottom: 5px; margin-left: 5px; text-align-last: right;'
-                ng-click="add()">
-            Add a new todo
-        </button>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <button class="button button-outline icon-left ion-plus button-positive"
+                        style='margin-top: 5px; margin-bottom: 5px; margin-left: 5px; text-align-last: right;'
+                        ng-click="add()">
+                    Add todo
+                </button>
+            </div>
+        </div>
 
         <ion-refresher on-refresh="doRefresh()">
 
