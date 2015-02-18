@@ -14,9 +14,13 @@ angular.module('myDayMobileApp.controllers', [])
 
     .controller('TodayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
+
         function getData()
         {
             $scope.items = [];
+            $scope.incomplete = 0;
+            $scope.total = 0;
+
             $http( { method: 'GET', $$asyncCallback:false,
                 url: 'http://myday.herokuapp.com/today.json?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
@@ -25,6 +29,9 @@ angular.module('myDayMobileApp.controllers', [])
                     console.log('$http success');
                     angular.forEach(data, function(todo)
                     {
+                        $scope.total++;
+                        if (!todo.is_complete == true)
+                            $scope.incomplete++;
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
                     });
@@ -63,7 +70,7 @@ angular.module('myDayMobileApp.controllers', [])
                 {
                     // do something?
                 });
-
+            $scope.incomplete--;
         }
 
 
@@ -89,6 +96,7 @@ angular.module('myDayMobileApp.controllers', [])
                 {
                     // do something?
                 });
+            $scope.incomplete++;
 
         }
 
