@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/task-menu.html" afterPath="$PROJECT_DIR$/templates/task-menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/today.html" afterPath="$PROJECT_DIR$/templates/today.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424207961675" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424260250936" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
     <file path="/someday.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121291142" ignored="false" />
     <file path="/config.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121876895" ignored="false" />
     <file path="/new.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424205618470" ignored="false" />
-    <file path="/task-menu.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424207815320" ignored="false" />
+    <file path="/task-menu.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424268552596" ignored="false" />
     <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424260016133" ignored="false" />
-    <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424259874520" ignored="false" />
+    <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424268924772" ignored="false" />
+    <file path="/home.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269237387" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
       <file leaf-file-name="today.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/today.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="74" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.75">
+            <state line="12" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="-7.5">
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
               </folding>
@@ -48,10 +50,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.34456354">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="36" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.5125554">
+            <state line="58" column="36" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task-menu.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/task-menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="31" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-20.625">
               <folding />
             </state>
           </provider>
@@ -77,7 +97,6 @@
       <list>
         <option value="$PROJECT_DIR$/ionic.css" />
         <option value="$PROJECT_DIR$/ionic.bundle.js" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/signin.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ionicApp.js" />
@@ -86,9 +105,10 @@
         <option value="$PROJECT_DIR$/templates/new.html" />
         <option value="$PROJECT_DIR$/templates/tomorrow.html" />
         <option value="$PROJECT_DIR$/templates/someday.html" />
+        <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/templates/task-menu.html" />
         <option value="$PROJECT_DIR$/templates/today.html" />
-        <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
       </list>
     </option>
   </component>
@@ -295,7 +315,11 @@
       <created>1424207964979</created>
       <updated>1424207964979</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding progress stats">
+      <created>1424260257623</created>
+      <updated>1424260257623</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -364,7 +388,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding icons to the left swipe menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding progress stats" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -384,6 +408,7 @@
     <MESSAGE value="Fixing config.xml for build.phonegap.com ..." />
     <MESSAGE value="Adding an &quot;add new todo&quot; form as child to the main 3 pages" />
     <MESSAGE value="Adding icons to the left swipe menu" />
+    <MESSAGE value="Adding progress stats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -392,13 +417,6 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
@@ -463,25 +481,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/task-menu.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="99" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.5859375">
+        <state line="58" column="36" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="31" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/today.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="74" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.75">
+        <state line="12" column="28" selection-start="515" selection-end="515" vertical-scroll-proportion="-7.5">
           <folding>
             <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="36" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.5125554">
+        <state line="15" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.34456354">
           <folding />
         </state>
       </provider>
