@@ -4,13 +4,12 @@
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signin.html" afterPath="$PROJECT_DIR$/templates/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424543654326" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424556782218" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -18,13 +17,13 @@
     <file path="/config.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121876895" ignored="false" />
     <file path="/new.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424205618470" ignored="false" />
     <file path="/task-menu.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424270179571" ignored="false" />
-    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424545636217" ignored="false" />
+    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424558978989" ignored="false" />
     <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269603568" ignored="false" />
     <file path="/home.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269237387" ignored="false" />
-    <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424454272560" ignored="false" />
+    <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424557333151" ignored="false" />
     <file path="$PROJECT_DIR$/../MyDay/app/controllers/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424535027635" ignored="false" />
     <file path="/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424534413748" ignored="false" />
-    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424545832269" ignored="false" />
+    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424558981769" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="45" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.5125554">
+            <state line="53" column="31" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.70901036">
               <folding />
             </state>
           </provider>
@@ -56,7 +55,7 @@
       <file leaf-file-name="signin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+            <state line="10" column="86" selection-start="314" selection-end="333" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -65,7 +64,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="111" column="73" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,8 +107,8 @@
         <option value="$PROJECT_DIR$/templates/tomorrow.html" />
         <option value="$PROJECT_DIR$/templates/today.html" />
         <option value="$PROJECT_DIR$/templates/task-menu.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/signin.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
       </list>
@@ -331,13 +330,18 @@
       <created>1424269878780</created>
       <updated>1424269878780</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Working on getting JSON calls to the host API controller...">
+      <created>1424556785267</created>
+      <updated>1424556785267</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="112" width="1294" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -352,7 +356,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -400,7 +403,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing format of 'add' buttons and today page stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on getting JSON calls to the host API controller..." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -423,6 +426,7 @@
     <MESSAGE value="Adding progress stats" />
     <MESSAGE value="Adding tips and icons to the home screen" />
     <MESSAGE value="Fixing format of 'add' buttons and today page stats" />
+    <MESSAGE value="Working on getting JSON calls to the host API controller..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -494,13 +498,6 @@
         <state line="23" column="132" selection-start="949" selection-end="949" vertical-scroll-proportion="0.5390625" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
@@ -508,16 +505,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="73" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+        <state line="10" column="86" selection-start="314" selection-end="333" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="45" selection-start="2289" selection-end="2289" vertical-scroll-proportion="0.5125554">
+        <state line="53" column="31" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.70901036">
           <folding />
         </state>
       </provider>

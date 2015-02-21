@@ -2,16 +2,6 @@
 angular.module('myDayMobileApp.controllers', [])
 
 
-    //.controller('SignInController', function ($scope, $state) {
-
-        //$scope.signIn = function (user) {
-        //    console.log('username=', user.username);
-        //    console.log('password=', user.password);
-        //    $state.go('appmenu.home');
-        //};
-
-    //})
-
     .controller('HomeController', function ($rootScope, $scope, $state, $ionicModal, $http) {
 
         // set up the modal
@@ -39,86 +29,33 @@ angular.module('myDayMobileApp.controllers', [])
         });
 
         $scope.signIn = function (u) {
-            //console.log('username=', u.username);
-            //console.log('password=', u.password);
-            console.log('attempting to ping mothership to get auth token...');
-
             var payload = {'user': {'email': u.username, 'password': u.password} };
-            //console.log(payload);
 
-            var req = {
-                method: 'POST',
-                url: 'http://myday.herokuapp.com/api/users/sign_in',
-                headers:
-                    {
-                        'X-Requested-With': 'XMLHttpRequest',
-                        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', //'application/json',
-                        'Accept': 'application/json, text/plain, */*'
-                    },
-                data:
-                    {
-                        'user': {'email': u.username, 'password': u.password}
-                    }
-            };
-
-            //$http.post('http://myday.herokuapp.com/api/users/sign_in', payload)
-            //    .then(function(response)
-            //    {
-            //        console.log('in then');
-            //        console.log('response=' + response);
-            //    });
-
-            $http.post('http://127.0.0.1:3000/api/users/sign_in', payload, {
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
-                })
-                    .then(function(response)
-                    {
-                        console.log('in then');
-                        console.log('response=' + response);
-                    });
-
-/*
-            $http(req)
+            $http.post('http://myday.herokuapp.com/api/users/sign_in', payload)
                 .success(function(data, status, headers, config)
-                    {
-                        console.log('success');
-                    })
+                {
+                    //console.log('success');
+                    //console.log('success? =' + data.success);
+                    //console.log('auth_token =' + data.auth_token);
+                    localStorage.setItem('auth_token', data.auth_token);
+                    $scope.modal.hide();
+                })
                 .error(function(data, status, headers, config)
-                    {
-                        console.log('error in $http post');
-                        console.log('status=' + status);
-                        console.log('data=' + data);
-                        //console.log('headers=' + headers);
-                        console.log('config=' + config);
+                {
+                    //console.log('error');
+                    //console.log('success? =' + data.success);
+                    alert('Credentials entered did not work.');
+                    //$scope.modal.hide();
+                })
 
-                    })
-                .finally(function(data, status, headers, config)
-                    {
-                        console.log('finally');
-                        console.log('status=' + status);
-                        console.log('data=' + data);
-                        //console.log('headers=' + headers);
-                        console.log('config=' + config);
-                    })
-                .then(function(response)
-                    {
-                        console.log('in then');
-                        console.log('response=' + response);
-                    });
-*/
-
-            $scope.modal.hide();
         };
 
         showLoginOnNullUser = function () {
-            if (!$rootScope.auth_token)
+            if (!localStorage.getItem('auth_token'))
                 $scope.openModal();
         };
 
         // http://forum.ionicframework.com/t/how-to-call-modal-show-on-controller-init/8550
-
-        // get this from a cookie!
-        //$rootScope.auth_token = null;
 
     })
 
