@@ -1,34 +1,141 @@
+
 angular.module('myDayMobileApp.controllers', [])
 
 
-    .controller('SignInController', function ($scope, $state) {
+    //.controller('SignInController', function ($scope, $state) {
 
-        $scope.signIn = function (user) {
-            console.log('username=', user.username);
-            console.log('password=', user.password);
-            $state.go('appmenu.home');
+        //$scope.signIn = function (user) {
+        //    console.log('username=', user.username);
+        //    console.log('password=', user.password);
+        //    $state.go('appmenu.home');
+        //};
+
+    //})
+
+    .controller('HomeController', function ($rootScope, $scope, $state, $ionicModal, $http) {
+
+        // set up the modal
+        $ionicModal.fromTemplateUrl('templates/signin.html',
+            {
+                scope: $scope,
+                animation: 'slide-in-up'
+            })
+            .then(function (modal)
+            {
+                $scope.modal = modal;
+                showLoginOnNullUser();
+            });
+
+        $scope.openModal = function() {
+            $scope.modal.show()
+        }
+
+        $scope.closeModal = function() {
+            $scope.modal.hide();
         };
 
-    })
+        $scope.$on('$destroy', function() {
+            $scope.modal.remove();
+        });
 
+        $scope.signIn = function (u) {
+            //console.log('username=', u.username);
+            //console.log('password=', u.password);
+            console.log('attempting to ping mothership to get auth token...');
+
+            var payload = {'user': {'email': u.username, 'password': u.password} };
+            //console.log(payload);
+
+            var req = {
+                method: 'POST',
+                url: 'http://myday.herokuapp.com/api/users/sign_in',
+                headers:
+                    {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', //'application/json',
+                        'Accept': 'application/json, text/plain, */*'
+                    },
+                data:
+                    {
+                        'user': {'email': u.username, 'password': u.password}
+                    }
+            };
+
+            //$http.post('http://myday.herokuapp.com/api/users/sign_in', payload)
+            //    .then(function(response)
+            //    {
+            //        console.log('in then');
+            //        console.log('response=' + response);
+            //    });
+
+            $http.post('http://127.0.0.1:3000/api/users/sign_in', payload, {
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                })
+                    .then(function(response)
+                    {
+                        console.log('in then');
+                        console.log('response=' + response);
+                    });
+
+/*
+            $http(req)
+                .success(function(data, status, headers, config)
+                    {
+                        console.log('success');
+                    })
+                .error(function(data, status, headers, config)
+                    {
+                        console.log('error in $http post');
+                        console.log('status=' + status);
+                        console.log('data=' + data);
+                        //console.log('headers=' + headers);
+                        console.log('config=' + config);
+
+                    })
+                .finally(function(data, status, headers, config)
+                    {
+                        console.log('finally');
+                        console.log('status=' + status);
+                        console.log('data=' + data);
+                        //console.log('headers=' + headers);
+                        console.log('config=' + config);
+                    })
+                .then(function(response)
+                    {
+                        console.log('in then');
+                        console.log('response=' + response);
+                    });
+*/
+
+            $scope.modal.hide();
+        };
+
+        showLoginOnNullUser = function () {
+            if (!$rootScope.auth_token)
+                $scope.openModal();
+        };
+
+        // http://forum.ionicframework.com/t/how-to-call-modal-show-on-controller-init/8550
+
+        // get this from a cookie!
+        //$rootScope.auth_token = null;
+
+    })
 
     .controller('TodayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
 
-        function getData()
-        {
+        function getData() {
             $scope.items = [];
             $scope.incomplete = 0;
             $scope.total = 0;
 
-            $http( { method: 'GET', $$asyncCallback:false,
+            $http({ method: 'GET', $$asyncCallback: false,
                 url: 'http://myday.herokuapp.com/today.json?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     console.log('$http success');
-                    angular.forEach(data, function(todo)
-                    {
+                    angular.forEach(data, function (todo) {
                         $scope.total++;
                         if (!todo.is_complete == true)
                             $scope.incomplete++;
@@ -37,7 +144,7 @@ angular.module('myDayMobileApp.controllers', [])
                     });
                     //cordova.plugins.notification.badge.set($scope.incompleteItems);
                 })
-                .error(function(data, status, headers, config) {
+                .error(function (data, status, headers, config) {
                     alert('error in $http get');
                     console.log('error in $http get');
                     console.log('status=' + status);
@@ -48,52 +155,44 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
-        function markComplete(id)
-        {
+        function markComplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
             $scope.incomplete--;
         }
 
 
-        function markIncomplete(id)
-        {
+        function markIncomplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
             $scope.incomplete++;
@@ -101,13 +200,12 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
-        $scope.add = function() {
+        $scope.add = function () {
             $state.go('appmenu.new');
         }
 
 
-        $scope.doRefresh = function ()
-        {
+        $scope.doRefresh = function () {
 
             console.log('user initiated refreshing...');
             $timeout(function () {
@@ -120,19 +218,14 @@ angular.module('myDayMobileApp.controllers', [])
         };
 
 
-        $scope.check = function(id)
-        {
+        $scope.check = function (id) {
 
-            angular.forEach($scope.items, function(o)
-            {
-                if (o.id == id)
-                {
-                    if (o.checked == false)
-                    {
+            angular.forEach($scope.items, function (o) {
+                if (o.id == id) {
+                    if (o.checked == false) {
                         markIncomplete(id);
                     }
-                    else
-                    {
+                    else {
                         markComplete(id);
                     }
                 }
@@ -149,23 +242,20 @@ angular.module('myDayMobileApp.controllers', [])
 
     .controller('TomorrowController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
-        function getData()
-        {
+        function getData() {
             $scope.items = [];
-            $http( { method: 'GET', $$asyncCallback:false,
+            $http({ method: 'GET', $$asyncCallback: false,
                 url: 'http://myday.herokuapp.com/tomorrow.json?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     console.log('$http success');
-                    angular.forEach(data, function(todo)
-                    {
+                    angular.forEach(data, function (todo) {
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
                     });
                     //cordova.plugins.notification.badge.set($scope.incompleteItems);
                 })
-                .error(function(data, status, headers, config) {
+                .error(function (data, status, headers, config) {
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
@@ -175,65 +265,56 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
-        function markComplete(id)
-        {
+        function markComplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
 
         }
 
 
-        function markIncomplete(id)
-        {
+        function markIncomplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
 
         }
 
 
-        $scope.add = function() {
+        $scope.add = function () {
             $state.go('appmenu.new');
         }
 
 
-        $scope.doRefresh = function ()
-        {
+        $scope.doRefresh = function () {
 
             console.log('user initiated refreshing...');
             $timeout(function () {
@@ -246,19 +327,14 @@ angular.module('myDayMobileApp.controllers', [])
         };
 
 
-        $scope.check = function(id)
-        {
+        $scope.check = function (id) {
 
-            angular.forEach($scope.items, function(o)
-            {
-                if (o.id == id)
-                {
-                    if (o.checked == false)
-                    {
+            angular.forEach($scope.items, function (o) {
+                if (o.id == id) {
+                    if (o.checked == false) {
                         markIncomplete(id);
                     }
-                    else
-                    {
+                    else {
                         markComplete(id);
                     }
                 }
@@ -275,23 +351,20 @@ angular.module('myDayMobileApp.controllers', [])
 
     .controller('SomedayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
 
-        function getData()
-        {
+        function getData() {
             $scope.items = [];
-            $http( { method: 'GET', $$asyncCallback:false,
+            $http({ method: 'GET', $$asyncCallback: false,
                 url: 'http://myday.herokuapp.com/backlog.json?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     console.log('$http success');
-                    angular.forEach(data, function(todo)
-                    {
+                    angular.forEach(data, function (todo) {
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
                     });
                     //cordova.plugins.notification.badge.set($scope.incompleteItems);
                 })
-                .error(function(data, status, headers, config) {
+                .error(function (data, status, headers, config) {
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
@@ -301,65 +374,56 @@ angular.module('myDayMobileApp.controllers', [])
         }
 
 
-        function markComplete(id)
-        {
+        function markComplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
 
         }
 
 
-        function markIncomplete(id)
-        {
+        function markIncomplete(id) {
             $http({
                 method: 'PUT',
                 url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=mjwiPdGEPqnAV8MiFfLp',
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
-                .success(function(data, status, headers, config)
-                {
+                .success(function (data, status, headers, config) {
                     // do something?
                 })
-                .error(function(data, status, headers, config)
-                {
+                .error(function (data, status, headers, config) {
                     // do something?
                     console.log('error in $http get');
                     console.log('status=' + status);
                     console.log('headers=' + headers);
                     console.log('config=' + config);
                 })
-                .finally(function(data, status, headers, config)
-                {
+                .finally(function (data, status, headers, config) {
                     // do something?
                 });
 
         }
 
 
-        $scope.add = function() {
+        $scope.add = function () {
             $state.go('appmenu.new');
         }
 
 
-        $scope.doRefresh = function ()
-        {
+        $scope.doRefresh = function () {
 
             console.log('user initiated refreshing...');
             $timeout(function () {
@@ -372,19 +436,14 @@ angular.module('myDayMobileApp.controllers', [])
         };
 
 
-        $scope.check = function(id)
-        {
+        $scope.check = function (id) {
 
-            angular.forEach($scope.items, function(o)
-            {
-                if (o.id == id)
-                {
-                    if (o.checked == false)
-                    {
+            angular.forEach($scope.items, function (o) {
+                if (o.id == id) {
+                    if (o.checked == false) {
                         markIncomplete(id);
                     }
-                    else
-                    {
+                    else {
                         markComplete(id);
                     }
                 }
@@ -411,8 +470,8 @@ angular.module('myDayMobileApp.controllers', [])
 
         $scope.todo = {};
 
-        $scope.submit = function() {
-            if(!$scope.todo.subject) {
+        $scope.submit = function () {
+            if (!$scope.todo.subject) {
                 alert('Form cannot be left blank');
                 return;
             }
@@ -425,7 +484,7 @@ angular.module('myDayMobileApp.controllers', [])
                 dt = today.getMonth() + 1 + '/' + today.getDate() + '/' + today.getFullYear();
             else if ($scope.todo.duedate == '2')
                 dt = tomorrow.getMonth() + 1 + '/' + tomorrow.getDate() + '/' + tomorrow.getFullYear();
-            $scope.payload = {subject:$scope.todo.subject, is_complete:false, recurrence:0, position:1, due_date:dt};
+            $scope.payload = {subject: $scope.todo.subject, is_complete: false, recurrence: 0, position: 1, due_date: dt};
 
             console.log('$scope.payload.subject=' + $scope.payload.subject);
             console.log('$scope.payload.duedate=' + $scope.payload.due_date);

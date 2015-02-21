@@ -1,4 +1,9 @@
-<ion-view view-title="Sign-In">
+<ion-modal-view>
+
+    <ion-header-bar>
+        <h1 class="title">Log In</h1>
+    </ion-header-bar>
+
     <ion-content>
         <div class="list">
             <label class="item item-input">
@@ -12,11 +17,9 @@
         </div>
         <div class="padding">
             <button class="button button-block button-positive" ng-click="signIn(user)">
-                Sign-In
+                OK
             </button>
-            <p class="text-center">
-                <a href="#/forgot-password">Forgot password</a>
-            </p>
         </div>
     </ion-content>
-</ion-view>
+
+</ion-modal-view>
