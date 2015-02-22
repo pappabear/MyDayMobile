@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424610684561" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424610881650" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
     <file path="/someday.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121291142" ignored="false" />
-    <file path="/config.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121876895" ignored="false" />
+    <file path="/config.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424611636838" ignored="false" />
     <file path="/new.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424205618470" ignored="false" />
     <file path="/task-menu.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424270179571" ignored="false" />
-    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424558978989" ignored="false" />
+    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424611218680" ignored="false" />
     <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269603568" ignored="false" />
     <file path="/home.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269237387" ignored="false" />
     <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424557333151" ignored="false" />
     <file path="$PROJECT_DIR$/../MyDay/app/controllers/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424535027635" ignored="false" />
     <file path="/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424534413748" ignored="false" />
-    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424610863901" ignored="false" />
+    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424611637874" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +41,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="70" selection-start="5353" selection-end="5353" vertical-scroll-proportion="-0.20632531">
+            <state line="60" column="31" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="47" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.86706054">
               <folding />
             </state>
           </provider>
@@ -99,7 +108,6 @@
         <option value="$PROJECT_DIR$/ionic.bundle.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ionicApp.js" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/templates/new.html" />
         <option value="$PROJECT_DIR$/templates/someday.html" />
         <option value="$PROJECT_DIR$/templates/tomorrow.html" />
@@ -109,6 +117,7 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/signin.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -347,7 +356,11 @@
       <created>1424610687828</created>
       <updated>1424610687828</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updating the badge counter">
+      <created>1424610888451</created>
+      <updated>1424610888451</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -416,7 +429,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding JSON calls to the host API controller to get auth_token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the badge counter" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -441,6 +454,7 @@
     <MESSAGE value="Fixing format of 'add' buttons and today page stats" />
     <MESSAGE value="Working on getting JSON calls to the host API controller..." />
     <MESSAGE value="Adding JSON calls to the host API controller to get auth_token" />
+    <MESSAGE value="Updating the badge counter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -468,13 +482,6 @@
     <entry file="file://$PROJECT_DIR$/lib/ionic/version.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="220" selection-end="220" vertical-scroll-proportion="0.088626295">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/new.html">
@@ -535,7 +542,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="70" selection-start="5353" selection-end="5353" vertical-scroll-proportion="-0.20632531">
+        <state line="60" column="31" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="47" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.86706054">
           <folding />
         </state>
       </provider>
