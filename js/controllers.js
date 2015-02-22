@@ -77,7 +77,7 @@ angular.module('myDayMobileApp.controllers', [])
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
                     });
-                    cordova.plugins.notification.badge.set($scope.incompleteItems);
+                    cordova.plugins.notification.badge.set($scope.incomplete);
                 })
                 .error(function (data, status, headers, config) {
                     alert('error in $http get');

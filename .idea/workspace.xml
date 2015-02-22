@@ -7,7 +7,7 @@
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424609511189" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424610301239" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424557333151" ignored="false" />
     <file path="$PROJECT_DIR$/../MyDay/app/controllers/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424535027635" ignored="false" />
     <file path="/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424534413748" ignored="false" />
-    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424609853374" ignored="false" />
+    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424610640456" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="423" column="16" selection-start="15044" selection-end="15044" vertical-scroll-proportion="0.6159639">
+            <state line="77" column="90" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.65210843">
               <folding />
             </state>
           </provider>
@@ -339,7 +339,11 @@
       <created>1424609514196</created>
       <updated>1424609514196</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding JSON calls to the host API controller to get auth_token">
+      <created>1424610303798</created>
+      <updated>1424610303798</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -408,7 +412,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on getting JSON calls to the host API controller..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding JSON calls to the host API controller to get auth_token" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -432,6 +436,7 @@
     <MESSAGE value="Adding tips and icons to the home screen" />
     <MESSAGE value="Fixing format of 'add' buttons and today page stats" />
     <MESSAGE value="Working on getting JSON calls to the host API controller..." />
+    <MESSAGE value="Adding JSON calls to the host API controller to get auth_token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -526,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="423" column="16" selection-start="15044" selection-end="15044" vertical-scroll-proportion="0.6159639">
+        <state line="77" column="90" selection-start="2807" selection-end="2807" vertical-scroll-proportion="0.65210843">
           <folding />
         </state>
       </provider>
