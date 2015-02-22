@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signin.html" afterPath="$PROJECT_DIR$/templates/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424556782218" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424559039718" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -23,7 +21,7 @@
     <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424557333151" ignored="false" />
     <file path="$PROJECT_DIR$/../MyDay/app/controllers/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424535027635" ignored="false" />
     <file path="/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424534413748" ignored="false" />
-    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424558981769" ignored="false" />
+    <file path="$PROJECT_DIR$/../MyDay/.idea/workspace.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424609505570" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="31" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.70901036">
+            <state line="68" column="70" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.70901036">
               <folding />
             </state>
           </provider>
@@ -115,8 +113,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
-    <option name="y" value="112" />
+    <option name="y" value="23" />
     <option name="width" value="1294" />
     <option name="height" value="777" />
   </component>
@@ -334,11 +331,15 @@
       <created>1424556785267</created>
       <updated>1424556785267</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Working on getting JSON calls to the host API controller...">
+      <created>1424559042111</created>
+      <updated>1424559042111</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="112" width="1294" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1294" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,7 +522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="31" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.70901036">
+        <state line="68" column="70" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.70901036">
           <folding />
         </state>
       </provider>

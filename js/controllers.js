@@ -55,8 +55,6 @@ angular.module('myDayMobileApp.controllers', [])
                 $scope.openModal();
         };
 
-        // http://forum.ionicframework.com/t/how-to-call-modal-show-on-controller-init/8550
-
     })
 
     .controller('TodayController', function ($scope, $ionicSideMenuDelegate, $timeout, $http, $state) {
