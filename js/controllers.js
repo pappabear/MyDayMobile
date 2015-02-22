@@ -1,8 +1,7 @@
 
 angular.module('myDayMobileApp.controllers', [])
 
-
-    .controller('HomeController', function ($rootScope, $scope, $state, $ionicModal, $http) {
+     .controller('HomeController', function ($rootScope, $scope, $state, $ionicModal, $http) {
 
         // set up the modal
         $ionicModal.fromTemplateUrl('templates/signin.html',
@@ -420,6 +419,7 @@ angular.module('myDayMobileApp.controllers', [])
                 dt = today.getMonth() + 1 + '/' + today.getDate() + '/' + today.getFullYear();
             else if ($scope.todo.duedate == '2')
                 dt = tomorrow.getMonth() + 1 + '/' + tomorrow.getDate() + '/' + tomorrow.getFullYear();
+/*
             $scope.payload = {subject: $scope.todo.subject, is_complete: false, recurrence: 0, position: 1, due_date: dt};
 
             $http({
@@ -427,6 +427,22 @@ angular.module('myDayMobileApp.controllers', [])
                 url: 'http://myday.herokuapp.com/todos?auth_token=' + localStorage.getItem('auth_token'),
                 data: $scope.payload
             });
+*/
+
+
+            var payload = {todo:{subject: $scope.todo.subject, is_complete: false, recurrence: 0, position: 1, due_date: dt}};
+            console.log('payload=' + payload);
+
+            $http.post('http://myday.herokuapp.com/todos?auth_token=' + localStorage.getItem('auth_token'), payload)
+                .success(function(data, status, headers, config)
+                {
+                    console.log('success');
+                })
+                .error(function(data, status, headers, config)
+                {
+                    console.log('error');
+                });
+
 
             $scope.showForm = false;
             //$scope.attendees.push($scope.attendee);
