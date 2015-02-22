@@ -109,6 +109,7 @@ angular.module('myDayMobileApp.controllers', [])
                     // do something?
                 });
             $scope.incomplete--;
+            cordova.plugins.notification.badge.set($scope.incomplete);
         }
 
 
@@ -131,6 +132,7 @@ angular.module('myDayMobileApp.controllers', [])
                     // do something?
                 });
             $scope.incomplete++;
+            cordova.plugins.notification.badge.set($scope.incomplete);
 
         }
 
