@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/today.html" afterPath="$PROJECT_DIR$/templates/today.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tomorrow.html" afterPath="$PROJECT_DIR$/templates/tomorrow.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424646465905" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424740964475" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -15,8 +17,8 @@
     <file path="/config.xml" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424611636838" ignored="false" />
     <file path="/new.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424205618470" ignored="false" />
     <file path="/task-menu.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424270179571" ignored="false" />
-    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424646010719" ignored="false" />
-    <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269603568" ignored="false" />
+    <file path="/controllers.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424741422548" ignored="false" />
+    <file path="/today.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424741278357" ignored="false" />
     <file path="/home.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424269237387" ignored="false" />
     <file path="/signin.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424557333151" ignored="false" />
     <file path="$PROJECT_DIR$/../MyDay/app/controllers/sessions_controller.rb" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424535027635" ignored="false" />
@@ -43,11 +45,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="1" selection-start="52" selection-end="52" vertical-scroll-proportion="0.022590362">
+            <state line="193" column="0" selection-start="6878" selection-end="6878" vertical-scroll-proportion="-7.8235292">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="today.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/today.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="685" selection-end="836" vertical-scroll-proportion="-15.0">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#center#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tomorrow.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/tomorrow.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.45941806">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#center#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,20 +111,20 @@
         <option value="$PROJECT_DIR$/ionicApp.js" />
         <option value="$PROJECT_DIR$/templates/new.html" />
         <option value="$PROJECT_DIR$/templates/someday.html" />
-        <option value="$PROJECT_DIR$/templates/tomorrow.html" />
-        <option value="$PROJECT_DIR$/templates/today.html" />
         <option value="$PROJECT_DIR$/templates/task-menu.html" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/signin.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/templates/today.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/templates/tomorrow.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="499" />
-    <option name="y" value="104" />
+    <option name="x" value="146" />
+    <option name="y" value="58" />
     <option name="width" value="1294" />
     <option name="height" value="777" />
   </component>
@@ -128,7 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,14 +202,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -340,12 +366,16 @@
       <created>1424611670543</created>
       <updated>1424611670543</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed fringe case defect with packaging of remote object on POST">
+      <created>1424646506318</created>
+      <updated>1424646506319</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="499" y="104" width="1294" height="777" extended-state="0" />
-    <editor active="false" />
+    <frame x="146" y="58" width="1294" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -409,7 +439,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding splash screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed fringe case defect with packaging of remote object on POST" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -436,6 +466,7 @@
     <MESSAGE value="Adding JSON calls to the host API controller to get auth_token" />
     <MESSAGE value="Updating the badge counter" />
     <MESSAGE value="Adding splash screen" />
+    <MESSAGE value="Fixed fringe case defect with packaging of remote object on POST" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -483,16 +514,6 @@
         <state line="6" column="0" selection-start="77" selection-end="126" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tomorrow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/today.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/task-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="132" selection-start="949" selection-end="949" vertical-scroll-proportion="0.5390625" />
@@ -524,8 +545,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="52" selection-end="52" vertical-scroll-proportion="0.022590362">
+        <state line="193" column="0" selection-start="6878" selection-end="6878" vertical-scroll-proportion="-7.8235292">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/today.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="685" selection-end="836" vertical-scroll-proportion="-15.0">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#center#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tomorrow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.45941806">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#center#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

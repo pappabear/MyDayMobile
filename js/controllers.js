@@ -30,7 +30,7 @@ angular.module('myDayMobileApp.controllers', [])
         $scope.signIn = function (u) {
             var payload = {'user': {'email': u.username, 'password': u.password} };
 
-            $http.post('http://myday.herokuapp.com/api/users/sign_in', payload)
+            $http.post('http://127.0.0.1:3000/api/users/sign_in', payload)
                 .success(function(data, status, headers, config)
                 {
                     //console.log('success');
@@ -65,10 +65,16 @@ angular.module('myDayMobileApp.controllers', [])
             $scope.total = 0;
 
             $http({ method: 'GET', $$asyncCallback: false,
-                url: 'http://myday.herokuapp.com/today.json?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/today.json?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
+
                     //console.log('$http success');
+                    if (data.length > 0)
+                        $scope.style='display:none;';
+                    else
+                        $scope.style='';
+
                     angular.forEach(data, function (todo) {
                         $scope.total++;
                         if (!todo.is_complete == true)
@@ -92,7 +98,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markComplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -115,7 +121,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markIncomplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -181,10 +187,16 @@ angular.module('myDayMobileApp.controllers', [])
         function getData() {
             $scope.items = [];
             $http({ method: 'GET', $$asyncCallback: false,
-                url: 'http://myday.herokuapp.com/tomorrow.json?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/tomorrow.json?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
+
                     //console.log('$http success');
+                    if (data.length > 0)
+                        $scope.style='display:none;';
+                    else
+                        $scope.style='';
+
                     angular.forEach(data, function (todo) {
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
@@ -204,7 +216,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markComplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -226,7 +238,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markIncomplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -290,7 +302,7 @@ angular.module('myDayMobileApp.controllers', [])
         function getData() {
             $scope.items = [];
             $http({ method: 'GET', $$asyncCallback: false,
-                url: 'http://myday.herokuapp.com/backlog.json?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/backlog.json?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     console.log('$http success');
@@ -313,7 +325,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markComplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_complete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -335,7 +347,7 @@ angular.module('myDayMobileApp.controllers', [])
         function markIncomplete(id) {
             $http({
                 method: 'PUT',
-                url: 'http://myday.herokuapp.com/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos/mark_incomplete/' + id + '?auth_token=' + localStorage.getItem('auth_token'),
                 headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json, text/plain, */*'}})
                 .success(function (data, status, headers, config) {
                     // do something?
@@ -424,7 +436,7 @@ angular.module('myDayMobileApp.controllers', [])
 
             $http({
                 method: 'POST',
-                url: 'http://myday.herokuapp.com/todos?auth_token=' + localStorage.getItem('auth_token'),
+                url: 'http://127.0.0.1:3000/todos?auth_token=' + localStorage.getItem('auth_token'),
                 data: $scope.payload
             });
 */
@@ -433,7 +445,7 @@ angular.module('myDayMobileApp.controllers', [])
             var payload = {todo:{subject: $scope.todo.subject, is_complete: false, recurrence: 0, position: 1, due_date: dt}};
             console.log('payload=' + payload);
 
-            $http.post('http://myday.herokuapp.com/todos?auth_token=' + localStorage.getItem('auth_token'), payload)
+            $http.post('http://127.0.0.1:3000/todos?auth_token=' + localStorage.getItem('auth_token'), payload)
                 .success(function(data, status, headers, config)
                 {
                     console.log('success');
