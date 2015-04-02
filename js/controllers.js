@@ -65,7 +65,7 @@ angular.module('myDayMobileApp.controllers', [])
             $scope.incomplete = 0;
             $scope.total = 0;
 
-            $http.get('http://127.0.0.1:3000/today.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.get('http://myday.herokuapp.com/today.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function(data, status, headers, config) {
                     if (data.length > 0)
                         $scope.style='display:none;';
@@ -91,7 +91,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markComplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete--;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -107,7 +107,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markIncomplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete++;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -167,7 +167,7 @@ angular.module('myDayMobileApp.controllers', [])
 
         function getData() {
             $scope.items = [];
-            $http.get('http://127.0.0.1:3000/tomorrow.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.get('http://myday.herokuapp.com/tomorrow.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
 
                     //console.log('$http success');
@@ -193,7 +193,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markComplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete--;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -209,7 +209,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markIncomplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete++;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -269,7 +269,7 @@ angular.module('myDayMobileApp.controllers', [])
 
         function getData() {
             $scope.items = [];
-            $http.get('http://127.0.0.1:3000/backlog.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.get('http://myday.herokuapp.com/backlog.json?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     console.log('$http success');
                     angular.forEach(data, function (todo) {
@@ -289,7 +289,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markComplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete--;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -305,7 +305,7 @@ angular.module('myDayMobileApp.controllers', [])
 
 
         function markIncomplete(id) {
-            $http.post('http://127.0.0.1:3000/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete++;
                     cordova.plugins.notification.badge.set($scope.incomplete);
@@ -390,8 +390,8 @@ angular.module('myDayMobileApp.controllers', [])
             var payload = {todo:{subject: $scope.todo.subject, is_complete: false, recurrence: 0, position: 1, due_date: dt}};
             console.log('payload=' + payload);
 
-            //$http.post('http://127.0.0.1:3000/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
-            $http.post('http://127.0.0.1:3000/todos?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'), payload)
+            //$http.post('http://myday.herokuapp.com/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
+            $http.post('http://myday.herokuapp.com/todos?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'), payload)
                 .success(function(data, status, headers, config)
                 {
                     console.log('success');

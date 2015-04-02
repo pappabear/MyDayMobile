@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1427923893301" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1427934324680" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -59,19 +58,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="393" column="0" selection-start="14052" selection-end="14052" vertical-scroll-proportion="0.5440729">
+            <state line="393" column="50" selection-start="14152" selection-end="14152" vertical-scroll-proportion="-101.35294">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="45" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
+            <state line="92" column="45" selection-start="3039" selection-end="3039" vertical-scroll-proportion="2.0566318">
               <folding />
             </state>
           </provider>
@@ -367,7 +366,11 @@
       <created>1424741795808</created>
       <updated>1424741795808</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Made fixes to accomodate Rails 4 API backend">
+      <created>1427934329681</created>
+      <updated>1427934329681</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -436,7 +439,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix display where 0 items are found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made fixes to accomodate Rails 4 API backend" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -465,6 +468,7 @@
     <MESSAGE value="Adding splash screen" />
     <MESSAGE value="Fixed fringe case defect with packaging of remote object on POST" />
     <MESSAGE value="Fix display where 0 items are found" />
+    <MESSAGE value="Made fixes to accomodate Rails 4 API backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -548,16 +552,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="45" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.0">
+        <state line="393" column="50" selection-start="14152" selection-end="14152" vertical-scroll-proportion="-101.35294">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="0" selection-start="14052" selection-end="14052" vertical-scroll-proportion="0.5440729">
+        <state line="92" column="45" selection-start="3039" selection-end="3039" vertical-scroll-proportion="2.0566318">
           <folding />
         </state>
       </provider>
