@@ -84,6 +84,13 @@ angular.module('myDayMobileApp', ['ionic', 'myDayMobileApp.controllers'])
 
     $urlRouterProvider.otherwise("/tasks/home");
 
+    console.log('Deleting headers...');
+    delete $httpProvider.defaults.headers.common["X-Requested-With"];
+    $httpProvider.defaults.headers.common = {};
+    $httpProvider.defaults.headers.post = {};
+    $httpProvider.defaults.headers.put = {};
+    $httpProvider.defaults.headers.patch = {};
+    $httpProvider.defaults.useXDomain = true;
 
     // Use x-www-form-urlencoded Content-Type
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
