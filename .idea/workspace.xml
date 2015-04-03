@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/checkbox.jpg" />
+    <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="Changing &quot;badge&quot; plugin">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1428061409553" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1428062688022" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -60,19 +58,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="22" selection-start="3555" selection-end="3555" vertical-scroll-proportion="0.22796352">
+            <state line="96" column="22" selection-start="3555" selection-end="3555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="2" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
+            <state line="37" column="72" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.8271237">
               <folding />
             </state>
           </provider>
@@ -117,8 +115,8 @@
         <option value="$PROJECT_DIR$/templates/today.html" />
         <option value="$PROJECT_DIR$/templates/tomorrow.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -385,13 +383,18 @@
       <created>1427934510856</created>
       <updated>1427934510856</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Changing &quot;badge&quot; plugin">
+      <created>1428062096756</created>
+      <updated>1428062096756</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1262" height="771" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -406,7 +409,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -454,7 +456,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made fixes to accomodate Rails 4 API backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing &quot;badge&quot; plugin" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -484,6 +486,7 @@
     <MESSAGE value="Fixed fringe case defect with packaging of remote object on POST" />
     <MESSAGE value="Fix display where 0 items are found" />
     <MESSAGE value="Made fixes to accomodate Rails 4 API backend" />
+    <MESSAGE value="Changing &quot;badge&quot; plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -563,16 +566,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="2" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
+        <state line="96" column="22" selection-start="3555" selection-end="3555" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="22" selection-start="3555" selection-end="3555" vertical-scroll-proportion="0.22796352">
+        <state line="37" column="72" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.8271237">
           <folding />
         </state>
       </provider>
