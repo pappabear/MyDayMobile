@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="Changing &quot;badge&quot; plugin">
+    <list default="true" id="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyDayMobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1428062688022" ignored="false" />
+    <file path="/Dummy.txt" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1428062694289" ignored="false" />
     <file path="/ionicApp.js" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424112603822" ignored="false" />
     <file path="/index.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424111927057" ignored="false" />
     <file path="/tomorrow.html" changelist="3139ce76-cc3d-4537-8da5-a82cf96fe0d3" time="1424121277109" ignored="false" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="72" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.8271237">
+            <state line="37" column="2" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.8271237">
               <folding />
             </state>
           </provider>
@@ -387,7 +387,11 @@
       <created>1428062096756</created>
       <updated>1428062096756</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Changing &quot;badge&quot; plugin">
+      <created>1428062696290</created>
+      <updated>1428062696290</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -575,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="72" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.8271237">
+        <state line="37" column="2" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.8271237">
           <folding />
         </state>
       </provider>
