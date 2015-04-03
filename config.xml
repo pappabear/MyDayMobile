@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.example"
+        id          = "com.tessagroup.myday"
         version     = "1.0.0" >
 
   <!-- versionCode is optional and Android only -->
@@ -35,7 +35,6 @@
   <gap:plugin name="org.apache.cordova.network-information" />
   <gap:plugin name="org.apache.cordova.splashscreen" />
   <gap:plugin name="org.apache.cordova.vibration" />
-  <gap:plugin name="de.appplant.cordova.plugin.badge" />
 
   <!-- Third party plugins -->
   <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
@@ -46,14 +45,14 @@
   <gap:platform name="ios" />
 
   <!-- iOS 7+, iPhone / iPod Touch  -->
-  <icon src="todolist.png" width="60" height="60"/>
-  <icon src="todolist.png" width="120" height="120"/>
+  <icon src="checkbox.jpg" width="60" height="60"/>
+  <icon src="checkbox.jpg" width="120" height="120"/>
 
   <!-- iOS 7+, iPad -->
-  <icon src="todolist.png" width="76" height="76"/>
-  <icon src="todolist.png" width="152" height="152"/>
+  <icon src="checkbox.jpg" width="76" height="76"/>
+  <icon src="checkbox.jpg" width="152" height="152"/>
 
-  <gap:splash src="todolist.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="checkbox.jpg" gap:platform="ios" width="320" height="480"/>
 
   <preference name="SplashScreen" value="screen" />
   <preference name="SplashScreenDelay" value="3000" />

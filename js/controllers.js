@@ -79,7 +79,7 @@ angular.module('myDayMobileApp.controllers', [])
                         var item = { id: todo.id, text: todo.subject, checked: todo.is_complete };
                         $scope.items.push(item);
                     });
-                    cordova.plugins.notification.badge.set($scope.incomplete);
+                    //cordova.plugins.notification.badge.set($scope.incomplete);
 
                 })
                 .error(function(data, status, headers, config) {
@@ -94,7 +94,7 @@ angular.module('myDayMobileApp.controllers', [])
             $http.post('http://myday.herokuapp.com/api/todos/mark_complete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete--;
-                    cordova.plugins.notification.badge.set($scope.incomplete);
+                    //cordova.plugins.notification.badge.set($scope.incomplete);
                 })
                 .error(function (data, status, headers, config) {
                     // do something?
@@ -110,7 +110,7 @@ angular.module('myDayMobileApp.controllers', [])
             $http.post('http://myday.herokuapp.com/api/todos/mark_incomplete/' + id + '?user_email=' + localStorage.getItem('email') + '&user_token=' + localStorage.getItem('auth_token'))
                 .success(function (data, status, headers, config) {
                     $scope.incomplete++;
-                    cordova.plugins.notification.badge.set($scope.incomplete);
+                    //cordova.plugins.notification.badge.set($scope.incomplete);
                 })
                 .error(function (data, status, headers, config) {
                     // do something?
